@@ -1,15 +1,19 @@
-import express from 'express';
-const app = express();
+import express from 'express'
 
-app.use(express.json()); //middleware que transoforma la req.body a un json
+import diaryRouter from './routes/diaries'
+const app = express()
 
-const PORT = 3000;
+app.use(express.json()) // middleware que transoforma la req.body a un json
+
+const PORT = 3000
 
 app.get('/ping', (_req, res) => {
-    console.log('ping');
-    res.send('pong');
-});
+  console.log('ping')
+  res.send('pong')
+})
+
+app.use('/api/diaries', diaryRouter)
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+  console.log(`Server is running on port ${PORT}`)
+})

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "date": "2017-01-01",
+        "weather": "rainy",
+        "visibility":"poor",
+        "comment": "Pretty Scary flight, I'm glad i'm alive"
+    },
+    {
+        "id": 2,
+        "date": "2017-04-01",
+        "weather": "sunny",
+        "visibility":"great",
+        "comment": "Everything went well, I'm getting better at this"
+    },
+    {
+        "id": 3,
+        "date": "2017-07-01",
+        "weather": "cloudy",
+        "visibility":"good",
+        "comment": "I'm getting the hang of this"
+    },
+    {
+        "id": 4,
+        "date": "2017-10-01",
+        "weather": "windy",
+        "visibility":"ok",
+        "comment": "A really good flight :)"
+    }
+]
